@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Quickchan</title>
+<body>
+
+  <ul>
+   <a href="/">QUCKCHAN - Create your own minimalist image board in a matter of seconds! </a></li>
+   <br></br>
+  <li><a href="/newboard">Create New Board! </a></li>
+  {% for board in boards %}
+  <li><a href="/b/{{board[1]}}">{{board[1]}} - {{board[2]}}</a></li>
+  {% endfor %}
+  </ul>
+
+</body>

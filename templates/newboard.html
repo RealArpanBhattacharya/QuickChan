@@ -1,0 +1,21 @@
+<!doctype html>
+<title>metischan</title>
+<head>
+  <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='materialize/css/materialize.min.css')}}"  media="screen,projection"/>
+</head>
+<body>
+  <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="{{url_for('static',filename='materialize/js/materialize.min.js')}}"></script>
+    
+ 
+  <form method = "POST" action="/newboard" enctype=multipart/form-data>
+    Board Name:<input type="text" name="board_name"/><br/>
+    Board Description:<textarea type="text" name="board_description"></textarea><br/>
+    <input type="submit" value="Create Board!"/>
+    </form>
+  
+</body>
